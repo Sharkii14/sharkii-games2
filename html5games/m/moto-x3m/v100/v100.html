@@ -23,12 +23,10 @@
             }
             var nape = "nape.mi.js";
             window.famobi_onPauseRequested = function(){
-                // code that pauses/mutes the game
                 console.log('ad started');
                 myDispatchEvent('SDK_GAME_PAUSE');
             };
             window.famobi_onResumeRequested = function(){
-                // code that unpauses/unmutes the game
                 console.log('ad resumed');
                 myDispatchEvent('SDK_GAME_START');
             };
@@ -44,7 +42,7 @@
                 firstJS = document.getElementsByTagName('script')[0];
                 fgJS.src = url + encodeURIComponent(document.location.href);
                 firstJS.parentNode.insertBefore(fgJS, firstJS);
-               })(document, '/html5games/gameapi/v1.js?e=');
+               })(document, 'https://cdn.jsdelivr.net/gh/Sharkii14/sharkii-games2@main/html5games/gameapi/v1.js?e=');
         </script>
 </head>
 <body>
